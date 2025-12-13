@@ -1,7 +1,10 @@
 # Advent of AI Agents 2025
 
-[25 days](https://adventofagents.com/). Zero to Production-Ready AI Agents on Google Cloud.
+[25 days in Dec 2025](https://adventofagents.com/). Zero to Production-Ready AI Agents on Google Cloud.
 
+This repository is a replication of the official webpage with my notes, it is not a replacement. I created it just so I don't have to keep ALT+TABbing between windows. And it also serves to document my attempts at doing the exercises and the results. As it is a living document, expect it to change over time.
+
+*ps: I might not do it daily but group days together.*
 
 ## December 2025 Advent Calendar
 
