@@ -1,7 +1,10 @@
 # Advent of AI Agents 2025
 
-[25 days](https://adventofagents.com/). Zero to Production-Ready AI Agents on Google Cloud.
+[25 days in Dec 2025](https://adventofagents.com/). Zero to Production-Ready AI Agents on Google Cloud.
 
+This repository is a replication of the official webpage with my notes, it is not a replacement. I created it just so I don't have to keep ALT+TABbing between windows. And it also serves to document my attempts at doing the exercises and the results. As it is a living document, expect it to change over time.
+
+*ps: I might not do it daily but group days together.*
 
 ## December 2025 Advent Calendar
 
@@ -22,14 +25,16 @@ Before diving into the daily challenges, make sure your system is ready to run a
 
 ### Prerequisites
 
-You'll need the following installed on your system:
+You'll need the following to run the code examples:
 
+- **Credit/Debit card to link to GCP account to get free credits**
+- **A [GCP account](https://console.cloud.google.com/) with free credits that has not been used before**
+- **A Google Cloud Project with the [Gemini API](https://console.cloud.google.com/marketplace/product/google/generativelanguage.googleapis.com) enabled**
+- **A valid GOOGLE_API_KEY from [Google AI Studio](https://aistudio.google.com/api-keys)**
 - **Python 3.10+** - The Google ADK requires Python 3.10 or higher
 - **uvx** - Tool for running Python applications in isolated environments
 - **make** (optional) - For running Makefile commands in some examples
-- **Google Cloud CLI** (optional) - For deploying to Google Cloud
-
-
+- **Google Cloud CLI** (optional) - For deploying to Google Cloud and verifying your setup   
 
 ### Installation
 
