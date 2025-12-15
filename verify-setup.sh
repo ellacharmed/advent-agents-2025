@@ -31,6 +31,28 @@ else
     echo "✗ Agent Starter Pack: NOT accessible"
 fi
 
+# Check Google Cloud CLI & Gemini API
+if command -v gcloud &> /dev/null; then
+    echo "✓ Google Cloud CLI: $(gcloud --version | head -n 1)"
+    
+    # Check Project
+    CURRENT_PROJECT=$(gcloud config get-value project 2>/dev/null)
+    if [ -n "$CURRENT_PROJECT" ]; then
+        echo "  • Active Project: $CURRENT_PROJECT"
+        
+        # Check Gemini API
+        if gcloud services list --enabled --filter="name:generativelanguage.googleapis.com" 2>/dev/null | grep -q "generativelanguage.googleapis.com"; then
+             echo "  • Gemini API: ✓ ENABLED"
+        else
+             echo "  • Gemini API: ✗ NOT ENABLED (Run: gcloud services enable generativelanguage.googleapis.com)"
+        fi
+    else
+        echo "  • Active Project: ✗ NONE SELECTED (Run: gcloud auth login && gcloud config set project ID)"
+    fi
+else
+    echo "✗ Google Cloud CLI: NOT INSTALLED (Optional, but recommended for debugging quota/deployment)"
+fi
+
 echo ""
 echo "=== Summary ==="
 echo "You are ready for:"

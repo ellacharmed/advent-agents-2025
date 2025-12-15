@@ -25,14 +25,16 @@ Before diving into the daily challenges, make sure your system is ready to run a
 
 ### Prerequisites
 
-You'll need the following installed on your system:
+You'll need the following to run the code examples:
 
+- **Credit/Debit card to link to GCP account to get free credits**
+- **A [GCP account](https://console.cloud.google.com/) with free credits that has not been used before**
+- **A Google Cloud Project with the [Gemini API](https://console.cloud.google.com/marketplace/product/google/generativelanguage.googleapis.com) enabled**
+- **A valid GOOGLE_API_KEY from [Google AI Studio](https://aistudio.google.com/api-keys)**
 - **Python 3.10+** - The Google ADK requires Python 3.10 or higher
 - **uvx** - Tool for running Python applications in isolated environments
 - **make** (optional) - For running Makefile commands in some examples
-- **Google Cloud CLI** (optional) - For deploying to Google Cloud
-
-
+- **Google Cloud CLI** (optional) - For deploying to Google Cloud and verifying your setup   
 
 ### Installation
 
